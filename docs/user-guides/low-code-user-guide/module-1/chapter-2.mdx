@@ -1,0 +1,40 @@
+# Chapter 2: Getting Started
+
+## Development Basics - Views and Logic
+
+When developing an application, it can be broken down into two sections: the View and the Logic.
+
+The Views have to do with the front-end UI and are concerned with the visual elements of the app.
+Views can either be **Pages** or **Widgets**. Views also utilize other resources such as JavaScript and CSS.
+Within EASYProcess, Views are created on the **UI Canvas**.
+
+![](https://epdocs.krisesystems.com/Applications/100011/images/documents/DOC-30000044/image9C74874B96DF7FBA999F26FD43D383001.png)
+
+*UI Canvas in EASYProcess*
+
+The Logic is the back-end process that handles all the processing of data.
+The Logic is responsible for pulling data from a source and providing it to the View to display.
+It also takes the data that is submitted by users on the View and processes it.
+The Logic within EASYProcess is built in a screen called the **Logic Canvas**.
+
+![](https://epdocs.krisesystems.com/Applications/100011/images/documents/DOC-30000044/image9C74874B96DF7FBA999F26FD43D383002.png)
+
+*Logic Canvas in EASYProcess*
+
+Notice the Logic Canvas resembles a flowchart.
+This is because it follows the flowchart concept to help visually explain the process and various cases of possible behavior.
+
+All locations in EASYProcess where logic is built use the Logic Canvas,
+but they can be given different names depending on where the logic is running and what it is responsible for -
+such as APIs, Workflows, Methods, and Controllers.
+
+The best example of the View and the Logic working together is on a page.
+The page below is an order history page that shows a user their order.
+
+![](https://epdocs.krisesystems.com/Applications/100011/images/documents/DOC-30000044/image9C74874B96DF7FBA999F26FD43D383003.png)
+
+At the top of the page, it has filters, one of which is used to filter the orders by their status. The status filter is a drop down list with possible values to choose from. The end user will make a selection and it will be used to filter the grid to show only the orders that meet the chosen status.
+
+The drop down list is created as a control within the page (view). The options within it are selected by the logic that runs when the page loads. Then, once the user makes a selection, different logic runs to find the data based on the user’s selection. Once the data is found, it is given to the page to display.
+
+---

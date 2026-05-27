@@ -5,9 +5,9 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Test Documentation Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'EASYProcess Document Library',
+  tagline: 'EASYProcess is a No-Code/Low-Code Platform for creating mobile apps, web apps, REST APIs and batch applications.',
+  favicon: 'https://epdocs.krisesystems.com/Applications/100011/icons/book.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -15,7 +15,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://www.krisesystems.com/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/docs-test/',
@@ -72,15 +72,16 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'https://epdocs.krisesystems.com/Applications/100011/images/new-logo.png',
     colorMode: {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'My Documentation Site',
+      title: 'EASYProcess Document Library',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'EASYProcess Document Library',
+        // src: 'https://epdocs.krisesystems.com/Applications/100011/images/new-logo.png',
+        src: 'https://epdocs.krisesystems.com/Applications/100011/Images/easyprocess-logo.png',
       },
       items: [
         {
@@ -141,7 +142,11 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} K-Rise Systems, Inc. Built with Docusaurus.`,
+      copyright: `
+        Copyright © ${new Date().getFullYear()} <a href="https://www.krisesystems.com/">K-Rise Systems</a>. <br>
+        This material is confidential and the property of K-Rise Systems. Unauthorized copying, distribution, or printing of this material without the express consent of K-Rise Systems is strictly prohibited. <br>
+        <br>
+        Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
